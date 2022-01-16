@@ -3,7 +3,7 @@
 namespace GustavoVinicius\BlogPackage;
 
 use Illuminate\Support\ServiceProvider;
-use GustavoVinicius\BlogPackage\Console\InstallBlogPackage;
+use GustavoVinicius\BlogPackage\Console\{InstallBlogPackage, MakeFooCommand};
 use Illuminate\Console\Scheduling\Schedule;
 
 class BlogPackageServiceProvider extends ServiceProvider
@@ -21,6 +21,10 @@ class BlogPackageServiceProvider extends ServiceProvider
     if($this->app->runningInConsole()){
       $this->commands([
         InstallBlogPackage::class,
+      ]);
+
+      $this->commands([
+        MakeFooCommand::class,
       ]);
     }
 
