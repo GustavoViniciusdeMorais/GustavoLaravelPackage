@@ -32,5 +32,6 @@
                 "Calculator": "GustavoVinicius\\BlogPackage\\Facades\\Calculator"
             }
         }
-    }
+    },
+    "version": "1.0.0"
 }
