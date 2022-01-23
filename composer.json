@@ -31,6 +31,9 @@
             "aliases": {
                 "Calculator": "GustavoVinicius\\BlogPackage\\Facades\\Calculator"
             }
+        },
+        "installer-paths":{
+            "./packages/": ["gustavo"]
         }
     },
     "version": "1.0.0"
