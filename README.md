@@ -7,4 +7,5 @@ vendor/bin/phpunit
 sudo composer require gustavovinicius/blogpackage:dev-master
 php artisan blogpackage:install
 php artisan make:foo
+sudo php artisan decorator:interface DataSource
 ```
