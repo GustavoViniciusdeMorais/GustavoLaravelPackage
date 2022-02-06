@@ -3,7 +3,8 @@
 namespace GustavoVinicius\BlogPackage;
 
 use Illuminate\Support\ServiceProvider;
-use GustavoVinicius\BlogPackage\Console\{InstallBlogPackage, MakeFooCommand};
+use GustavoVinicius\BlogPackage\Console\InstallBlogPackage;
+use GustavoVinicius\BlogPackage\Console\MakeFooCommand;
 use Illuminate\Console\Scheduling\Schedule;
 
 class BlogPackageServiceProvider extends ServiceProvider
