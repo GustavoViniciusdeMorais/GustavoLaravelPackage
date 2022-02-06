@@ -5,6 +5,7 @@ namespace GustavoVinicius\BlogPackage;
 use Illuminate\Support\ServiceProvider;
 use GustavoVinicius\BlogPackage\Console\InstallBlogPackage;
 use GustavoVinicius\BlogPackage\Console\MakeFooCommand;
+use GustavoVinicius\BlogPackage\Console\MakeDecoratorInterfaceCommand;
 use Illuminate\Console\Scheduling\Schedule;
 
 class BlogPackageServiceProvider extends ServiceProvider
@@ -26,6 +27,10 @@ class BlogPackageServiceProvider extends ServiceProvider
 
       $this->commands([
         MakeFooCommand::class,
+      ]);
+
+      $this->commands([
+        MakeDecoratorInterfaceCommand::class,
       ]);
     }
 

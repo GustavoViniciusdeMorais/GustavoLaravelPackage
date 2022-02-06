@@ -1,0 +1,9 @@
+<?php
+
+namespace DummyNamespace;
+
+interface DummyClass
+{
+    public function writeData($data);
+    public function readData(): string;
+}
